@@ -1,7 +1,11 @@
 package com.example;
 
+import com.example.tools.DirReader;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, sub-project2!");
+        DirReader dirReader = new DirReader();
+        dirReader.readDir(".\\src");
+        System.out.print(dirReader.getResult());
     }
 }
